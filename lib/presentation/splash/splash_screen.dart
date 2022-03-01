@@ -45,7 +45,9 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 20,
             ),
             Text('DeliveryApp',
-            style: Theme.of(context).textTheme.headline4 ?.copyWith(fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.headline4 ?.copyWith(
+              color: Colors.white,
+              fontWeight: FontWeight.bold),
             )
           ],
         ),

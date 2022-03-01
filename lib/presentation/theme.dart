@@ -15,9 +15,69 @@ class DeliveryColors {
 List<Color> deliveryGradients = [
   DeliveryColors.green, 
   DeliveryColors.purple];
+
 final lightTheme = ThemeData(
-  textTheme: GoogleFonts.poppinsTextTheme().apply(
-    bodyColor: DeliveryColors.white,
-    displayColor: DeliveryColors.white,
+    appBarTheme: AppBarTheme(
+    color: DeliveryColors.white,
   ),
+  canvasColor:DeliveryColors.white,
+  primaryColor:DeliveryColors.purple,
+  textTheme: GoogleFonts.poppinsTextTheme().apply(
+    bodyColor: DeliveryColors.purple,
+    displayColor: DeliveryColors.purple,
+  ),
+  inputDecorationTheme:InputDecorationTheme(
+   
+    hintStyle: GoogleFonts.poppins(
+      color: DeliveryColors.grey,
+      fontSize: 10,
+    ),
+    border: OutlineInputBorder(
+      borderRadius:BorderRadius.circular(10),
+      borderSide: BorderSide(
+        color: DeliveryColors.veryLightGrey,
+        width: 2,
+        style: BorderStyle.solid,
+      )
+    )
+  ),
+  iconTheme: IconThemeData(
+    color:DeliveryColors.purple
+  ),
+  primaryIconTheme: IconThemeData(
+    color:DeliveryColors.purple
+  ),
+  
 );
+
+final darkTheme = ThemeData(
+  canvasColor:DeliveryColors.grey,
+  primaryColor:DeliveryColors.white,
+  scaffoldBackgroundColor: DeliveryColors.dark,
+  textTheme: GoogleFonts.poppinsTextTheme().apply(
+    bodyColor: DeliveryColors.green,
+    displayColor: DeliveryColors.green,
+  ),
+  inputDecorationTheme:InputDecorationTheme(
+     fillColor:DeliveryColors.grey,
+    filled:true,
+    hintStyle: GoogleFonts.poppins(
+      color: DeliveryColors.white,
+      fontSize: 10,
+    ),
+    border: OutlineInputBorder(
+      borderRadius:BorderRadius.circular(10),
+      borderSide: BorderSide(
+        color: DeliveryColors.veryLightGrey,
+        width: 2,
+        style: BorderStyle.solid,
+      )
+    )
+  ),
+  iconTheme: IconThemeData(    
+    color:DeliveryColors.white
+  ),
+
+  
+);
+
