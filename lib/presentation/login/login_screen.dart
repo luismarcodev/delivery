@@ -134,7 +134,7 @@ class LoginScreen extends StatelessWidget {
                     'Login',
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headline6?.copyWith(
-                      color: Colors.white
+                      color: Colors.white 
                     ),
                     ),
                 ),
